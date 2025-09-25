@@ -1,0 +1,35 @@
+GET http://localhost:8080/lobbies
+
+###
+POST localhost:8080/lobbies
+Content-Type: application/json
+
+{
+  "game": "BLACKJACK",
+  "host": "freezeybob"
+}
+
+###
+PUT localhost:8080/lobbies/1
+Content-Type: application/json
+
+{
+  "game": "UNO"
+}
+
+###
+POST localhost:8080/lobbies/1/players
+Content-Type: application/json
+
+{
+  "username": "charlieischarlie"
+}
+
+###
+
+PUT localhost:8080/lobbies/1/players/flyingalice
+Content-Type: application/json
+
+###
+DELETE localhost:8080/lobbies/1/players/flyingalice
+Content-Type: application/json
